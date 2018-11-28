@@ -1,0 +1,19 @@
+
+http://developine.com/firebase-cloud-messaging-push-notification-android-tutorial/
+
+https://firebase.googleblog.com/2016/08/sending-notifications-between-android.html
+
+https://firebase.google.com/docs/functions/use-cases#notify_users_when_something_interesting_happens <cloud functions>
+
+https://www.codementor.io/flame3/send-push-notifications-du1085b9i  < custom data in notification>
+
+https://www.survivingwithandroid.com/2016/09/android-firebase-push-notification.html < Testing with rest Client >
+
+
+https://firebase.google.com/docs/cloud-messaging/android/receive < Firebase delivery behavior when app is background or foregroudn>
+
+
+https://stackoverflow.com/questions/49828430/how-to-send-fcm-notification-from-android-using-retrofit < peer notification from android client>
+iOs
+https://firebase.google.com/docs/ios/setup
+https://insights.nimblechapps.com/app-development/ios-app-development/how-to-use-firebase-to-send-notifications-in-ios

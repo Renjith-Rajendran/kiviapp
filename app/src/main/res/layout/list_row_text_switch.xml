@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:gravity="center_vertical">
+    <!--<View-->
+        <!--android:layout_width="2dp"-->
+        <!--android:id="@+id/selection_indicator"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginRight="14dp"/>-->
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/md_black_1000"
+        tools:text="Private Viewing"
+        android:paddingStart="16dp"
+        android:layout_gravity="center_vertical"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:id="@id/toggle_switch"
+        android:visibility="visible"
+        android:enabled="true"
+        android:layout_gravity="end|center_vertical"/>
+
+</LinearLayout>

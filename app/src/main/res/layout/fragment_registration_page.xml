@@ -1,0 +1,187 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".RegistrationActivity"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+            <View
+                android:id="@+id/header_view"
+                android:background="@color/kivi_back_ground"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:text="Registration"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <!-- Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_name"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_view"
+                >
+
+                <EditText
+                    android:drawableLeft="@drawable/name_1x"
+                    android:hint="First Name"
+                    android:id="@+id/input_name"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_email"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinput_name"
+                >
+
+                <EditText
+                    android:drawableLeft="@drawable/email_1x"
+                    android:hint="Email Address"
+                    android:id="@+id/input_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DoB Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_dob"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinput_email"
+                >
+
+                <EditText
+                    android:drawableLeft="@drawable/dob_1x"
+                    android:hint="Date Of Birth"
+                    android:id="@+id/input_dob"
+                    android:inputType="date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:buttonTint="@color/md_green_300"
+                android:id="@+id/checkbox_terms"
+                android:layout_height="64dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="wrap_content"
+                android:text="@string/hint_terms_of_use"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinput_dob"
+                />
+
+            <!-- Terms Of USe -->
+            <TextView
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/bulb_2x"
+            android:drawableTint="@color/md_green_300"
+            android:id="@+id/texthint_code"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+                android:maxLines="4"
+            android:text="@string/terms_of_use_details"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox_terms"
+            />
+
+            <!-- Register-->
+            <TextView
+                android:background="@drawable/square_box"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/textsend_register"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/texthint_code"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:id="@+id/discover_app_bar_layout"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--&gt;-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:background="@color/kivi_back_ground"-->
+    <!--android:elevation="4dp"-->
+    <!--android:gravity="center"-->
+    <!--android:id="@+id/reg_toolbar"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:layout_width="match_parent"-->
+    <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+    <!--app:title="@string/register_tool_bar_title"-->
+    <!--/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

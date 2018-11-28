@@ -1,0 +1,42 @@
+{
+  /*
+  * "{
+ *   ""AGE_LIMIT"": 18,
+ *   ""KIVI_LIST_LIMIT"": 30,
+ *   ""LOC_UPDATE_INTERVAL"": 120,
+ *   ""MAX_DISTANCE"": 100,
+ *   ""OTP_EXPIRATION_TIME"": 120,
+ *   ""REST_TIME"": 30,
+ *   ""blackouts"": [
+ *     {
+ *       ""areaName"": ""Via Sotto i Poli Italy"",
+ *       ""currentLat"": ""45.5627544"",
+ *       ""currentLng"": ""11.34594949999996"",
+ *       ""nelat"": ""45.63901245035944"",
+ *       ""nelng"": ""11.45509211027337"",
+ *       ""radius"": ""12"",
+ *       ""swlat"": ""45.48639269882429"",
+ *       ""swlng"": ""11.23710298038415""
+ *     }
+ *   ],
+ *   ""kivi_availability_rating"": {
+ *     ""ACCEPT"": 1,
+ *     ""NO_RESPONSE"": -1,
+ *     ""REJECT"": 0
+ *   },
+ *   ""kivi_perfomance_rating"": {
+ *     ""FIVE_STARS"": 3,
+ *     ""FOUR_STARS"": 2,
+ *     ""ONE_STARS"": -1,
+ *     ""THREE_STARS"": 1,
+ *     ""TWO_STARS"": 0,
+ *     ""ZERO_STARS"": -2
+ *   },
+ *   ""kivi_points"": {
+ *     ""deduction_points"": 2,
+ *     ""gain_points"": 2,
+ *     ""total_points"": 100
+ *   }
+ * }"
+  */
+}

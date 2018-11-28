@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:shape="rectangle">-->
+
+<!--<solid android:color="#25ffffff"></solid>-->
+
+<!--</selector>-->
+<!--<color name="profile_settings_selector_pressed_color">#FE80cbc4</color>-->
+<!--<color name="profile_settings_selector_selected_color">#FF80cbc4</color>-->
+<!--<color name="profile_settings_selector_normal_color">#FF181c1f</color>-->
+<!--<color name="profile_settings_selector_default_color">#FF181C1F</color>-->
+<!--<color name="profile_settings_divider_color">#FF282828</color>-->
+
+
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Checked state. -->
+    <item android:drawable="@color/profile_settings_selector_selected_color"
+        android:state_enabled="true"
+        android:state_checked="true"/>
+    <!-- Checked state. -->
+    <item android:drawable="@color/profile_settings_selector_selected_color"
+        android:state_enabled="true"
+        android:state_selected="true"
+        android:state_checked="true"/>
+    <!-- Selected state. -->
+    <item android:drawable="@color/profile_settings_selector_selected_color"
+        android:state_enabled="true"
+        android:state_selected="true"/>
+    <!-- Selected state. -->
+    <item android:drawable="@color/profile_settings_selector_selected_color"
+        android:state_checked="true"/>
+    <!-- pressed state. -->
+    <item android:drawable="@color/profile_settings_selector_pressed_color"
+        android:state_pressed="true"/>
+
+    <!-- Normal state. -->
+    <!--<item android:drawable="@color/profile_settings_selector_default_color"-->
+    <item android:drawable="@color/transparent"
+        android:state_pressed="false"
+        android:state_selected="false"/>
+
+    <!-- Normal state. -->
+    <item android:drawable="@color/transparent"/>
+    <!--<item android:drawable="@color/profile_settings_selector_default_color"/>-->
+
+</selector>

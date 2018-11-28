@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+/*
+    First list project dependencies
+    Second google and android package dependencies
+    Third  androidx package dependencies
+
+    Lastly list all third party library dependencies
+    Note:- All versions to be defined in root project gradle file
+ */
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //support lib
+    implementation rootProject.ext.androidxAppcompat
+    implementation rootProject.ext.androidxlifecycleExtensions
+    implementation rootProject.ext.androidxDynamicAnimation
+    implementation rootProject.ext.androidxConstraintlayout
+    implementation rootProject.ext.androidxPreference
+    implementation rootProject.ext.androidxLegacySupport
+
+    implementation rootProject.ext.androidMaterial
+
+    implementation rootProject.ext.gson
+    implementation rootProject.ext.picasso
+    implementation rootProject.ext.kotlinStdLib
+    implementation rootProject.ext.materialDialogs
+
+
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude module: 'jsr305'
+    })
+
+
+    //implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+}

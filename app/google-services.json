@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1019849693324",
+    "firebase_url": "https://kivi-2018.firebaseio.com",
+    "project_id": "kivi-2018",
+    "storage_bucket": "kivi-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019849693324:android:32da19a8d6ff4a72",
+        "android_client_info": {
+          "package_name": "kivi.ugran.com.launcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019849693324-ktoqulg0pv0593q259t0g48ph93p9tun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAycUUStpZpY-lnKUuJivbD6P45Cm3n-ec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

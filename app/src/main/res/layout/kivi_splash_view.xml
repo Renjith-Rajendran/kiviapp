@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/kivi_back_ground"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <View
+        android:background="@color/black"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:alpha="0"-->
+        <!--android:id="@+id/splash_logo"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:srcCompat="@drawable/kivisplash750x1334"/>-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:alpha="0"
+        android:id="@+id/splash_logo"
+        android:layout_height="32dp"
+        android:layout_width="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kivi_logo_ico"/>
+
+    <!--<TextView-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:id="@+id/kivi_app_version"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:maxLines="1"-->
+        <!--android:textColor="@color/white"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"/>-->
+</merge>

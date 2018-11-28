@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/kivi_back_ground"
+        android:id="@+id/mapview_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_menu_hamburger_black_1x_24dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/place_fragment_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/transparent"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapview_toolbar"
+        >
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <kivi.ugran.com.launcher.HomeFragmentBottomSheet
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/black_30_opa"
+            android:elevation="8dp"
+            android:id="@+id/bottom_sheet"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="200dp"
+            app:bottomSheetTopMargin="120dp"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            >
+            <FrameLayout
+                android:id="@+id/bottomsheet_container"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+        </kivi.ugran.com.launcher.HomeFragmentBottomSheet>
+        <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="400dp"-->
+        <!--android:background="@color/black_30_opa"-->
+        <!--android:elevation="8dp"-->
+        <!--android:clipToPadding="true"-->
+        <!--android:id="@+id/bottom_sheet"-->
+        <!--app:layout_behavior="@string/bottom_sheet_behavior"-->
+        <!--&gt;-->
+        <!--<FrameLayout-->
+        <!--android:id="@+id/bottomsheet_container"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--/>-->
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

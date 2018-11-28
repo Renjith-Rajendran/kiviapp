@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+/*
+    First list project dependencies
+    Second google and android package dependencies
+    Third  androidx package dependencies
+
+    Lastly list all third party library dependencies
+    Note:- All versions to be defined in root project gradle file
+ */
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(':core')
+
+    implementation rootProject.ext.androidxAppcompat
+    implementation rootProject.ext.androidxLifecycleRuntime
+    implementation rootProject.ext.androidxLifecycleExtensions
+    annotationProcessor rootProject.ext.androidxLifecycleCompiler
+
+    implementation rootProject.ext.androidMaterial
+
+    implementation rootProject.ext.okhttpLogginginterceptor
+    implementation rootProject.ext.okhttp
+    implementation rootProject.ext.retrofit
+    implementation rootProject.ext.retrofitScalar
+    implementation rootProject.ext.gsonConverter
+    implementation rootProject.ext.googlePlayServices
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-functions:16.1.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.google.firebase:firebase-firestore:17.1.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.3'
+    implementation "com.google.firebase:firebase-auth:16.0.4"
+
+    //work
+    //implementation rootProject.ext.workManager
+    //https://stackoverflow.com/questions/52467819/compile-errors-after-updating-to-workmanager-1-0-0-alpha09   Explains the issue why i have to exclude
+    implementation("android.arch.work:work-runtime:1.0.0-alpha10") {
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+}

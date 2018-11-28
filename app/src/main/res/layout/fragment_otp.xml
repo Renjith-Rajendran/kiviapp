@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    tools:context=".RegistrationActivity">
+
+    <View
+        android:id="@+id/header_view"
+        android:background="@color/kivi_back_ground"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:text="@string/complete_registration"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/bulb_2x"
+        android:drawableTint="@color/md_green_300"
+        android:id="@+id/texthint_code"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:maxLines="4"
+        android:text="@string/otp_instruction_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Security Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/texthint_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:drawableLeft="@drawable/security_1x"
+            android:hint="@string/hint_one_time_password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Send And Resend -->
+    <TextView
+        android:id="@+id/text_resend"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_security"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/square_box"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/resend"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:id="@+id/text_submit"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_security"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/square_box"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:text="@string/verify"
+        android:textSize="20sp"
+        android:textAlignment="center"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

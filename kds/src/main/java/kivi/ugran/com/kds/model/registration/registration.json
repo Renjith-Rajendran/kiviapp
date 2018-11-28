@@ -1,0 +1,49 @@
+{
+
+  /*
+ [
+{
+  "kivi_available_rating": 0,
+  "kivi_available_rating_count": 0,
+  "kivi_camera_resoluition": "320*480",
+  "connectivity_type": "GPS",
+  "kivi_content_rating": 0,
+  "kivi_content_rating_count": 0,
+  "coordinates": {
+    "lat": 8.56044,
+    "lng": -76.8807500000001
+  },
+  "device_id": "dummy4",
+  "kivi_device_name": "angler",
+  "kivi_device_token": "dummy",
+  "device_type": "android",
+  "dob": "12/12/1977",
+  "email": "josekabraham@hotmail.com",
+  "kivi_id": "dummy",
+  "isUpdated": 0,
+  "kivi_language": {
+    "language": "English"
+  },
+  "kivi_name": "jose",
+  "network_type": "WiFi",
+  "notification_sound": 1,
+  "notification_vibration": 1,
+  "profile_pic": "",
+  "kivi_requestor_rating": 0,
+  "kivi_requestor_rating_count": 0,
+  "kivi_rest_time": 10,
+  "user_roles": {
+    "admin": "0",
+    "user": 1
+  },
+  "kivi_status": "Available",
+  "kivi_system_version": "9.3.5",
+  "kivi_type": {
+    "photo": 1,
+    "video": 1
+  }
+}
+]
+
+  */
+}

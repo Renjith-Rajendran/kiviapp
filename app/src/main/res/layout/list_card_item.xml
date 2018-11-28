@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_list_card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_list_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_rectangle_with_radius">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/text_list_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="right"
+            android:id="@+id/add_to_collection"
+            android:background="@drawable/shape_pill"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:padding="16dp"
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/shape_background_webview"
+        android:animateLayoutChanges="true">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            />
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!---->
+            <!--android:id="@+id/container_web_view"-->
+            <!--&gt;-->
+            <!--<WebView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:id="@+id/webView"-->
+                <!--/>-->
+        <!--</FrameLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

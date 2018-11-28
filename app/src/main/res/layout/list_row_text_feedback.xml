@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_height="32dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <View
+        android:background="@drawable/profile_settings_listitem_selector"
+        android:id="@+id/selection_indicator"
+        android:layout_gravity="left"
+        android:layout_height="match_parent"
+        android:layout_marginRight="14dp"
+        android:layout_width="2dp"
+        />
+
+    <TextView
+        android:elevation="5dp"
+        android:id="@+id/item_name"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        tools:text="Name"
+        />
+
+    <TextView
+        android:background="@drawable/shape_circular_indicator"
+        android:gravity="center"
+        android:id="@+id/count_feedback"
+        android:layout_gravity="end|center_vertical"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="18dp"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        />
+
+</LinearLayout>

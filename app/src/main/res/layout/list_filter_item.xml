@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:background="@drawable/hamburger_ripple"-->
+    <!--android:id="@+id/item_layout"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--&gt;-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_height="32dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!--<View-->
+        <!--android:background="@drawable/profile_settings_listitem_selector"-->
+        <!--android:id="@+id/selection_indicator"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_height="16dp"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:layout_width="4dp"-->
+        <!--/>-->
+    <!--<View-->
+        <!--android:background="@color/md_black_1000"-->
+        <!--android:id="@+id/selection_indicator"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_height="16dp"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:layout_width="4dp"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:elevation="5dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:id="@+id/filter_name"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:paddingEnd="16dp"-->
+        <!--android:textColor="@color/md_black_1000"-->
+        <!--android:textSize="16sp"-->
+        <!--tools:text="Home"-->
+        <!--/>-->
+    <TextView
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/filter_name"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingStart="16dp"
+        android:textColor="@color/md_black_1000"
+        android:textSize="16sp"
+        tools:text="Home"
+        />
+
+</LinearLayout>

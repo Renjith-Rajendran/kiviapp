@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:background="@color/offwhite"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:background="?attr/colorPrimaryDark"-->
+        <!--android:gravity="bottom"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="16dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/profilepic"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:src="@drawable/name_3x"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/profilecamera"-->
+            <!--android:layout_gravity="center|bottom"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:src="@drawable/camera_ico_3x"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+    <include layout="@layout/drawer_header"/>
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:padding="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:textStyle="normal"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:text="Guest"
+        android:layout_gravity="bottom|center_vertical"
+        />
+    <ListView
+        android:animateLayoutChanges="true"
+        android:divider="@null"
+        android:id="@+id/dialog_listview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/list_filter_item"
+        />
+</LinearLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:animateLayoutChanges="true"-->
+    <!--android:clickable="true"-->
+    <!--android:background="@color/offwhite"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:background="?attr/colorPrimaryDark"-->
+        <!--android:gravity="bottom"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="16dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/profilepic"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:src="@drawable/name_3x"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/profilecamera"-->
+            <!--android:layout_gravity="center|bottom"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:src="@drawable/camera_ico_3x"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimaryDark"-->
+        <!--android:padding="16dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="@dimen/activity_horizontal_margin"-->
+        <!--android:text="Guest"-->
+        <!--android:layout_gravity="bottom|center_vertical"-->
+        <!--/>-->
+    <!--<ListView-->
+        <!--android:animateLayoutChanges="true"-->
+        <!--android:divider="@null"-->
+        <!--android:id="@+id/dialog_listview"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+
+        <!--android:requiresFadingEdge="vertical"-->
+        <!--android:scrollbars="vertical"-->
+        <!--tools:listitem="@layout/list_filter_item"-->
+        <!--/>-->
+<!--</LinearLayout>-->

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="2dp"
+    >
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass a snap"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requesting KiVi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black_95_opa"
+            />
+
+        <ImageView
+            android:id="@+id/requestedKiviIcon"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:paddingEnd="24dp"
+            android:src="@drawable/kivi_logo_ico"
+            />
+
+        <ImageView
+            android:id="@+id/full_star_1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fullstar"
+            android:paddingEnd="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/full_star_2"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fullstar"
+            android:paddingEnd="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/full_star_3"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fullstar"
+            android:paddingEnd="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/full_star_4"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fullstar"
+            android:paddingEnd="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/full_star_5"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fullstar"
+            android:paddingEnd="4dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divider_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/snap_type_row"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        >
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:text="Snap Type ?"
+            android:textColor="@color/black_95_opa"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+
+        <ImageView
+            android:id="@+id/info_icon_1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/info_ico_3x"
+            />
+
+        <ImageView
+            android:id="@+id/video_icon_1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/video_ico"
+            />
+
+        <ImageView
+            android:id="@+id/camera_icon_1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/camera_ico"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/how_soon_row"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        >
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:text="How Soon ?"
+            android:textColor="@color/black_95_opa"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+
+        <ImageView
+            android:id="@+id/info_icon_2"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/info_ico_3x"
+            />
+
+        <ImageView
+            android:id="@+id/speed"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/speed_disable_3x"
+            />
+
+        <ImageView
+            android:id="@+id/light_speed"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/light_speed_2x_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divider_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_place_row"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/snap_type_location"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Cerritos"
+            android:textColor="@color/black_95_opa"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_weight="3"
+            />
+
+        <ImageView
+            android:id="@+id/edit_place_icon"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:src="@drawable/edit_ico_3x"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/additional_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+        <!--android:background="@color/white_10_opa"-->
+        <!--android:background="@drawable/round_outline"-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinput"
+            android:background="@color/white_10_opa"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black_90_opa"
+            >
+
+            <EditText
+                android:background="@color/white_10_opa"
+                android:hint="Additional Instructions"
+                android:id="@+id/extra_instruction"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:imeOptions="actionDone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/go_button"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_rectangle_with_radius"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:id="@+id/divider_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+    </LinearLayout>
+</LinearLayout>

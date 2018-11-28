@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+//compile is the group of dependencies you need to build your application while testCompile is a group of dependencies that you need only for testing.
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "kivi.ugran.com.launcher"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+/*
+    First list project dependencies
+    Second google and android package dependencies
+    Third  androidx package dependencies
+
+    Lastly list all third party library dependencies
+    Note:- All versions to be defined in root project gradle file
+ */
+dependencies {
+    //dependent projects
+    implementation project(':kds')
+    implementation project(':core')
+
+    //android and google
+    implementation rootProject.ext.googlePlayServices
+    implementation rootProject.ext.androidMaterial
+
+    //maps
+    implementation rootProject.ext.googlePlayServicesMaps
+    implementation rootProject.ext.googlePlayServicesPlaces
+
+    //androidx
+    implementation rootProject.ext.androidxLegacySupport
+    implementation rootProject.ext.androidxlifecycleExtensions
+    implementation rootProject.ext.androidxDynamicAnimation
+    implementation rootProject.ext.androidxConstraintlayout
+    implementation rootProject.ext.androidxPreference
+    //androidx-support lib
+    implementation rootProject.ext.androidxAppcompat
+
+    //androidx-work
+    //implementation rootProject.ext.workManager
+    //https://stackoverflow.com/questions/52467819/compile-errors-after-updating-to-workmanager-1-0-0-alpha09   Explains the issue why i have to exclude
+    implementation("android.arch.work:work-runtime:1.0.0-alpha10") {
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude module: 'jsr305'
+    })
+
+
+    //kotlin
+    implementation rootProject.ext.kotlinStdLib
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-functions:16.1.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.google.firebase:firebase-firestore:17.1.1'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.2'
+
+    //material Dialog
+    implementation rootProject.ext.materialDialogs
+
+    //dagger
+    annotationProcessor rootProject.ext.daggerCompiler
+    implementation rootProject.ext.dagger
+    implementation rootProject.ext.daggerAndroid
+    implementation rootProject.ext.daggerAndroidSupport
+    annotationProcessor rootProject.ext.daggerAndroidProcessor
+
+    //piccaso for bitmap transformation
+    implementation rootProject.ext.picasso
+
+
+    //glide
+    //http://bumptech.github.io/glide/doc/download-setup.html#android-sdk-requirements
+    implementation("com.github.bumptech.glide:glide:$rootProject.glideVersion") {
+        exclude group: "com.android.support"
+    }
+
+    annotationProcessor rootProject.ext.glideCompiler
+    testImplementation 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+
+
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+//implementation 'com.google.android.material:material:1.1.0-alpha01'
+//implementation 'com.google.android.material:material:1.0.0'
+//implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+//    implementation 'androidx.dynamicanimation:dynamicanimation:1.0.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+//implementation 'androidx.appcompat:appcompat:1.0.2'
+//implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//implementation 'androidx.preference:preference:1.1.0-alpha01'
+//implementation 'com.google.android.material:material:1.0.0'
+//annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
